@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
 String[] numbers = {"one","two","three","four","five","six","seven","eight","nine","ten"};
 
         for(String number : numbers){
-            String song = String.format("Ants go marching %1$s by %1$s. Hoorah! Hoorah!", number);
+            String song = String.format(getResources().getString(R.string.song_format), number);
             Log.d(TAG, song);
         }
 
